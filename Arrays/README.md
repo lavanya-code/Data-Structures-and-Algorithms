@@ -20,3 +20,5 @@ static void setZeroes(int[][] matrix) {
         }
     }
 ```
+** Time Complexity = o(2*(n*m)) **
+** Space Complexity = o(1) **
