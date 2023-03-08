@@ -21,7 +21,7 @@ static void setZeroes(int[][] matrix) {
     }
 ```
 
-* Pascal Triangle - O(n<sup>2</sup>)
+* Pascal Triangle - O(n<sup>2</sup>) - O(n<sup>2</sup>)
 
 ```java
  public List<List<Integer>> generate(int numRows) {
