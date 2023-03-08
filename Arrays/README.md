@@ -1,5 +1,5 @@
 # Arrays
-* Set Zero Matrix
+* Set Zero Matrix - o(2*(n*m)) - o(1)
 
 ``` java
 static void setZeroes(int[][] matrix) {
@@ -19,7 +19,4 @@ static void setZeroes(int[][] matrix) {
         if (col0 == 0) matrix[i][0] = 0;
         }
     }
-    
-**Time Complexity = o(2*(n*m))**
-**Space Complexity = o(1)**
 ```
