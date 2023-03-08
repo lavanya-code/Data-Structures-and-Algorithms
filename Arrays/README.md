@@ -16,7 +16,7 @@ static void setZeroes(int[][] matrix) {
             for (int j = cols - 1; j >= 1; j--)
                 if (matrix[i][0] == 0 || matrix[0][j] == 0)
                     matrix[i][j] = 0;
-            if (col0 == 0) matrix[i][0] = 0;
+        if (col0 == 0) matrix[i][0] = 0;
         }
     }
 ```
