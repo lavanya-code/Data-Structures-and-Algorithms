@@ -19,6 +19,7 @@ static void setZeroes(int[][] matrix) {
         if (col0 == 0) matrix[i][0] = 0;
         }
     }
+    
+**Time Complexity = o(2*(n*m))**
+**Space Complexity = o(1)**
 ```
-** Time Complexity = o(2*(n*m)) **
-** Space Complexity = o(1) **
