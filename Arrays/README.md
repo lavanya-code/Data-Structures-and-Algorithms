@@ -69,7 +69,7 @@ public void reverse(int[] A, int i, int j) {
     while(i < j) swap(A, i++, j--);
 }
 }
-
+```
 * Kadane's Algorithm(Maximum Subarray) - O(N) - O(1)
 ``` java
 public static int maxSubArray(int[] nums,ArrayList<Integer> subarray) { 
