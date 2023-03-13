@@ -212,3 +212,32 @@ class TUF {
     }
 }
 ```
+* Find Repeating number and missing number - O(N) - O(1)
+``` java
+static ArrayList<Integer> missing_repeated_number(List<Integer> A) {
+        long len = A.size();
+
+        long S = (len * (len + 1) ) / 2;
+        long P = (len * (len + 1) * (2 * len + 1) ) / 6;
+        long missingNumber = 0, repeating = 0;
+
+        for (int i = 0; i < A.size(); i++) {
+            S -= (long)A.get(i);
+            P -= (long)A.get(i) * (long)A.get(i);
+        }
+
+        missingNumber = (S + P / S) / 2;
+
+        repeating = missingNumber - S;
+
+        ArrayList<Integer> ans = new ArrayList<>();
+
+        ans.add((int)repeating);
+        ans.add((int)missingNumber);
+
+        return ans;
+    }
+```
+
+
+
