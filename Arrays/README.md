@@ -111,7 +111,8 @@ public static int maxSubArray(int[] nums,ArrayList<Integer> subarray) {
 }
 ```
 * Stock and buy - O(N) - O(1)
-``` static int maxProfit(int[] arr) {
+```  java
+    static int maxProfit(int[] arr) {
     int maxPro = 0;
     int minPrice = Integer.MAX_VALUE;
     for (int i = 0; i < arr.length; i++) {
