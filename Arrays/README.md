@@ -238,6 +238,59 @@ static ArrayList<Integer> missing_repeated_number(List<Integer> A) {
         return ans;
     }
 ```
+* Search in sorted matrix - O(nlog(n*m)) - O(1)
+``` java
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int lo = 0;
+        if(matrix.length == 0) return false;
+        int n = matrix.length; 
+        int m = matrix[0].length; 
+        int hi = (n * m) - 1;
+        
+        while(lo <= hi) {
+            int mid = (lo + (hi - lo) / 2);
+            if(matrix[mid/m][mid % m] == target) {
+                return true;
+            }
+            if(matrix[mid/m][mid % m] < target) {
+                lo = mid + 1;
+            }
+            else {
+                hi = mid - 1;
+            }
+        }
+        return false;
+    }
+}
+```
+* power(X,n) - O(nlogn) - O(1)
+``` java
+import java.util.*;
+ public class Main{
+ public static double myPow(double x, int n) {
+    double ans = 1.0;
+    long nn = n;
+    if (nn < 0) nn = -1 * nn;
+    while (nn > 0) {
+      if (nn % 2 == 1) {
+        ans = ans * x;
+        nn = nn - 1;
+      } else {
+        x = x * x;
+        nn = nn / 2;
+      }
+    }
+    if (n < 0) ans = (double)(1.0) / (double)(ans);
+    return ans;
+  }
+
+    public static void main(String args[])
+    {
+        System.out.println(myPow(2,10));
+    }
+ }
+ ```
 
 
 
