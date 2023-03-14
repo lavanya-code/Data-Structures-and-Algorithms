@@ -291,6 +291,78 @@ import java.util.*;
     }
  }
  ```
+* Find the Majority Element that occurs more than N/2 times - O(N) - O(1)
+``` java
+class Solution {
+    public int majorityElement(int[] nums) {
+        int count = 0;
+        int element = 0;
+
+        for(int i=0;i<nums.length;i++){
+            if(count==0) element = nums[i];
+            if(nums[i]==element){
+                count++;
+            }else
+                count--;
+        }
+        return element;
+        
+    }
+}
+```
+* Find the Majority Element that occurs more than N/3 times - O(N) - O(1)
+``` java
+public static ArrayList < Integer > majorityElement(int[] nums) {
+
+    int number1 = -1, number2 = -1, count1 = 0, count2 = 0, len = nums.length;
+    for (int i = 0; i < len; i++) {
+      if (nums[i] == number1)
+        count1++;
+      else if (nums[i] == number2)
+        count2++;
+      else if (count1 == 0) {
+        number1 = nums[i];
+        count1 = 1;
+      } else if (count2 == 0) {
+        number2 = nums[i];
+        count2 = 1;
+      } else {
+        count1--;
+        count2--;
+      }
+    }
+    ArrayList < Integer > ans = new ArrayList < Integer > ();
+    count1 = 0;
+    count2 = 0;
+    for (int i = 0; i < len; i++) {
+      if (nums[i] == number1)
+        count1++;
+      else if (nums[i] == number2)
+        count2++;
+    }
+    if (count1 > len / 3)
+      ans.add(number1);
+    if (count2 > len / 3)
+      ans.add(number2);
+    return ans;
+  }
+  ```
+  * Grid Unique Paths - O(N-1) - O(1)
+  ``` java
+  class Solution {
+    public int uniquePaths(int m, int n) {
+        int N = m+n-2;
+        int r = m-1;
+        double res =1;
+        for(int i=1;i<=r;i++){
+            res = res*(N-r+i)/i;
+
+        }
+        return (int)res;
+        
+    }
+}
+```
 
 
 
