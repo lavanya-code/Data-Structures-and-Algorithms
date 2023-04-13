@@ -1,7 +1,13 @@
+.. contents::
+   :local:
+   :depth: 3
+
 # Arrays
 * Set Zero Matrix - O(2*(n*m)) - O(1)
 
-``` java
+.. code:: java
+
+
 static void setZeroes(int[][] matrix) {
         int col0 = 1, rows = matrix.length, cols = matrix[0].length;
 
