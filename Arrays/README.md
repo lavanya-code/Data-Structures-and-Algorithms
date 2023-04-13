@@ -1,9 +1,7 @@
-.. contents::
-   :local:
-   :depth: 3
-
-# Arrays
-* Set Zero Matrix - O(2*(n*m)) - O(1)
+Arrays
+========
+Set Zero Matrix - O(2*(n*m)) - O(1)
+-----------------------------------
 
 ```java
 static void setZeroes(int[][] matrix) {
