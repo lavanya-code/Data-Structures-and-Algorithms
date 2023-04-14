@@ -1,5 +1,6 @@
+
 Arrays
-========
+===================================
 Set Zero Matrix - O(2*(n*m)) - O(1)
 -----------------------------------
 
@@ -23,9 +24,9 @@ static void setZeroes(int[][] matrix) {
     }
 ```
 
-* Pascal Triangle - O(n<sup>2</sup>) - O(n<sup>2</sup>)
+Pascal Triangle - O(n<sup>2</sup>) - O(n<sup>2</sup>)
+-----------------------------------------------------
 
-```java
  public List<List<Integer>> generate(int numRows) {
          List<List<Integer>> list1 = new ArrayList<>();
         ArrayList<Integer> last = new ArrayList<>();
@@ -45,9 +46,10 @@ static void setZeroes(int[][] matrix) {
         return list1;
     }
 }
-```
-* Next permutations - O(N) -O(1)
-``` java
+                                                        
+Next permutations - O(N) -O(1)
+------------------------------                                                        
+
 class Solution {
     public void nextPermutation(int[] A) {
         if(A == null || A.length <= 1) return;
@@ -71,9 +73,10 @@ public void reverse(int[] A, int i, int j) {
     while(i < j) swap(A, i++, j--);
 }
 }
-```
-* Kadane's Algorithm(Maximum Subarray) - O(N) - O(1)
-``` java
+
+ Kadane's Algorithm(Maximum Subarray) - O(N) - O(1)
+ --------------------------------------------------       
+
 public static int maxSubArray(int[] nums,ArrayList<Integer> subarray) { 
         int msf=Integer.MIN_VALUE , meh=0 ; 
         int s=0;
@@ -111,9 +114,9 @@ public static int maxSubArray(int[] nums,ArrayList<Integer> subarray) {
         
     }
 }
-```
-* Stock and buy - O(N) - O(1)
-```  java
+
+Stock and buy - O(N) - O(1)
+---------------------------
     static int maxProfit(int[] arr) {
     int maxPro = 0;
     int minPrice = Integer.MAX_VALUE;
@@ -124,9 +127,9 @@ public static int maxSubArray(int[] nums,ArrayList<Integer> subarray) {
     return maxPro;
   }
 }
-```
-* Rotate Matrix -O(N*N) + O(N*N) - O(1)
-``` java
+
+Rotate Matrix -O(N*N) + O(N*N) - O(1)
+-------------------------------------
 import java.util.*;
 class TUF {
     static void rotate(int[][] matrix) {
@@ -161,9 +164,9 @@ class TUF {
 
     }
 }
-```
-* Merge two sorted array without extra space - O(N*M) - O(1)
-``` java
+
+Merge two sorted array without extra space - O(N*M) - O(1)
+----------------------------------------------------------
 static void merge(int[] arr1, int arr2[], int n, int m) {
     // code here
     int i, k;
@@ -189,9 +192,9 @@ static void merge(int[] arr1, int arr2[], int n, int m) {
     }
   }
 }
-```
-* Find duplicate in an array - O(N)-O(1)
-``` java
+
+Find duplicate in an array - O(N)-O(1)
+--------------------------------------
 class TUF {
     public static int findDuplicate(int[] nums) {
         int slow = nums[0];
@@ -213,9 +216,9 @@ class TUF {
         System.out.println("The duplicate element is " + findDuplicate(arr));
     }
 }
-```
-* Find Repeating number and missing number - O(N) - O(1)
-``` java
+
+Find Repeating number and missing number - O(N) - O(1)
+------------------------------------------------------
 static ArrayList<Integer> missing_repeated_number(List<Integer> A) {
         long len = A.size();
 
@@ -238,10 +241,9 @@ static ArrayList<Integer> missing_repeated_number(List<Integer> A) {
         ans.add((int)missingNumber);
 
         return ans;
-    }
-```
-* Search in sorted matrix - O(nlog(n*m)) - O(1)
-``` java
+
+Search in sorted matrix - O(nlog(n*m)) - O(1)
+--------------------------------------------
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int lo = 0;
@@ -265,9 +267,9 @@ class Solution {
         return false;
     }
 }
-```
-* power(X,n) - O(nlogn) - O(1)
-``` java
+
+power(X,n) - O(nlogn) - O(1)
+----------------------------
 import java.util.*;
  public class Main{
  public static double myPow(double x, int n) {
@@ -292,9 +294,9 @@ import java.util.*;
         System.out.println(myPow(2,10));
     }
  }
- ```
-* Find the Majority Element that occurs more than N/2 times - O(N) - O(1)
-``` java
+
+Find the Majority Element that occurs more than N/2 times - O(N) - O(1)
+-----------------------------------------------------------------------
 class Solution {
     public int majorityElement(int[] nums) {
         int count = 0;
@@ -311,9 +313,9 @@ class Solution {
         
     }
 }
-```
-* Find the Majority Element that occurs more than N/3 times - O(N) - O(1)
-``` java
+
+Find the Majority Element that occurs more than N/3 times - O(N) - O(1)
+-----------------------------------------------------------------------
 public static ArrayList < Integer > majorityElement(int[] nums) {
 
     int number1 = -1, number2 = -1, count1 = 0, count2 = 0, len = nums.length;
@@ -348,9 +350,9 @@ public static ArrayList < Integer > majorityElement(int[] nums) {
       ans.add(number2);
     return ans;
   }
-  ```
-  * Grid Unique Paths - O(N-1) - O(1)
-  ``` java
+ 
+Grid Unique Paths - O(N-1) - O(1)
+----------------------------------
   class Solution {
     public int uniquePaths(int m, int n) {
         int N = m+n-2;
@@ -364,7 +366,7 @@ public static ArrayList < Integer > majorityElement(int[] nums) {
         
     }
 }
-```
+
 
 
 
